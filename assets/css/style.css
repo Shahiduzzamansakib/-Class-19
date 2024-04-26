@@ -1,0 +1,897 @@
+/* Common Css Start */
+:root {
+    --primary-font: "Poppins", sans-serif;
+    --heading-font: "PT Sans", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: var(--primary-font);
+}
+h1,
+h2,
+h3 {
+    font-family: var(--heading-font);
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+button {
+    cursor: pointer;
+    border: none;
+}
+img {
+    display: block;
+    max-width: 100%;
+}
+.container {
+    width: 1110px;
+    margin: auto;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.justify-content-between {
+    justify-content: space-between;
+}
+.align-items-center {
+    align-items: center;
+}
+.text-center {
+    text-align: center;
+}
+.text-left {
+    text-align: left;
+}
+.text-right {
+    text-align: right;
+}
+#page_heading .container {
+    background-image: url("./../img/page_heading_bg.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    text-align: center;
+    padding: 45px 20px;
+}
+#page_heading h1 {
+    font-size: 46px;
+    color: #fff;
+    text-transform: capitalize;
+}
+#page_heading p {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 190%;
+    color: #fff;
+    position: relative;
+}
+#page_heading p::before {
+    content: "";
+    position: absolute;
+    width: 84px;
+    height: 2px;
+    background-color: #fff;
+    left: -90px;
+    top: calc(50% - 1px);
+}
+#page_heading p::after {
+    content: "";
+    position: absolute;
+    width: 84px;
+    height: 2px;
+    background-color: #fff;
+    right: -90px;
+    top: calc(50% - 1px);
+}
+/* Common Css End */
+
+/* =========== Nav Section Css Start =========== */
+#nav {
+    padding: 13px 0;
+}
+#nav .menu ul li{
+
+    margin-left: 5px;
+}
+#nav .menu ul li a {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 200%;
+    color: #353535;
+    padding: 5px 28px;
+    display: inline-block;
+    position: relative;
+}
+
+#nav .menu ul li a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: 0;
+    right: 0;
+    background-color: #353535;
+    transition: 0.4s;
+}
+#nav .menu ul li a:hover::after,
+#nav .menu ul li a.active::after {
+    left: 0;
+    width: 100%;
+}
+/* =========== Nav Section Css End =========== */
+/* =========== Hero Section Css Start =========== */
+#hero {
+
+    position: relative;
+    padding-top: 120px;
+    margin-bottom: 104px;
+}
+
+#hero .hero_content,
+#hero .hero_img {
+    width: 50%;
+}
+
+#hero .hero_content h5{
+
+    font-family: var(--primary-font);
+    font-weight: 400;
+    font-size: 24px;
+    color: #353535;
+
+}
+#hero .hero_content h5 img{
+
+    width: 25px;
+    margin-left: 38px;
+}
+
+#hero .hero_content h1{
+
+    font-weight: 700;
+    font-size: 64px;
+    color: #353535;
+
+}
+#hero .hero_content p{
+
+    font-family: var(--primary-font);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 190%;
+    width: 60%;
+    color: #353535;
+
+}
+#hero .hero_content .button a{
+
+    font-family: var(--primary-font);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 180%;
+    color: #353535;
+    background: #fff;
+    border-radius: 20px;
+    width: 209px;
+    height: 69px;
+    padding: 16px;
+    margin-top: 77px;
+    text-align: center;
+    display: inline-block;
+    border: 1px solid #000;
+    transition: .4s;
+
+   
+}
+#hero .hero_content .button a:nth-child(2){
+
+
+    margin-left: 40px;
+}
+#hero .hero_content .button a:hover{
+
+    background: #fc0;
+    color: #fff;
+    border: 1px solid #fc0;
+
+    
+}
+
+#hero .hero_content ul {
+    gap: 16px;
+    align-items: center;
+    padding-top: 66px;
+
+}
+
+#hero .hero_content ul li  a{
+    
+    width: 40px;
+    height: 40px;
+    background-color:  #f4f3f3;
+    color: #000;
+    display: inline-block;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    transition: .4s;
+}
+#hero .hero_content ul li  a:hover{
+
+    background: #fc0;
+   
+   
+}
+#hero .hero_img {
+    position: absolute;
+    right: 12px;
+    top: 0;
+    height: 100%;
+}
+#hero .hero_img img {
+    height: 100%;
+    width: auto;
+    margin-left: auto;
+}
+#hero .hero_img .author_info{
+
+    position: absolute;
+    left: 0;
+    bottom: 30px;
+    width: 155px;
+    height: 167px;
+    
+}
+#hero .hero_img .author_info img{
+
+    width: 100%;
+}
+
+#hero .hero_img .ui_design{
+
+    position: absolute;
+    left: 0;
+    top: 107px;
+   
+    
+}
+
+#hero .hero_img .research{
+
+    position: absolute;
+    top: 14px;
+    right: 19px;
+    width: 180px;
+   
+    
+}
+#hero .hero_img .research img{
+
+    width: 100%;
+    
+}
+
+/* =========== Hero Section Css end =========== */
+
+/* =============== About Section Css Start =============== */
+#about{
+
+
+   position: relative;
+    background: linear-gradient(130deg, #fc0 0%, #faffcb 100%, #faffcb 100%);
+
+}
+#about .about_img,
+#about .about_info{
+
+    width: 50%;
+}
+#about .about_info{
+
+    padding-top: 78px ;
+}
+#about .about_info h2{
+
+    
+    font-weight: 700;
+    font-size: 50px;
+    color: #353535;
+
+}
+#about .about_info p{
+
+    font-family: var(--primary-font);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 190%;
+    color: #353535;
+    margin-top: 26px;
+
+}
+#about .about_info a{
+
+    font-family: var(--primary-font);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 180%;
+    color: #353535;
+    border: 1px solid #000;
+    border-radius: 20px;
+    width: 171px;
+    height: 66px;
+    padding: 17px ;
+    display: inline-block;
+    text-align: center;
+    margin-top: 45px;
+    transition: .4s;
+
+
+}
+#about .about_info a:hover{
+
+    background: #fff;
+
+
+}
+#about .about_info img{
+
+    position: absolute;
+    right: 80px ;
+    bottom: 0;
+
+}
+/* =============== About Section Css End =============== */
+
+/* =============== Services Section Css Start =============== */
+#service{
+
+    padding-top: 151px;
+    
+}
+#service .service_card_container{
+
+    gap: 32px;
+}
+#service .service_card_container .service_card{
+
+    width: calc((100% / 3) - 64px) ;
+    margin: auto;
+    border-radius: 20px;
+    width: 350px;
+    height: 367px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.08);
+    background: #fff;
+    text-align: center;
+    
+    
+}
+#service .service_card_container .service_card img{
+
+    margin: auto;
+    padding-top: 39px;
+}
+#service .service_card_container .service_card h3{
+
+    font-family: var(--primary-font);
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 180%;
+    margin-top: 18px;
+    color: #353535;
+}
+#service .service_card_container .service_card p{
+
+    font-family: var(--primary-font);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 190%;
+    color: #7a7a7a;
+    margin-top: 14px;
+    padding: 0 47px ;
+}
+/* =============== Services Section Css End =============== */
+
+/* =============== Brand Section Css Start =============== */
+#brand{
+
+    padding-top: 165px;
+}
+#brand .container{
+
+    position: relative;
+    
+}
+
+#brand .brand_info{
+    
+    width: 50%;
+    padding-top: 78px ;
+    margin-left: auto;
+    padding-bottom: 81px;
+}
+#brand .brand_info h2{
+ 
+     
+     font-weight: 700;
+     font-size: 50px;
+     color: #353535;
+ 
+}
+#brand .brand_info p{
+
+    font-family: var(--primary-font);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 190%;
+    color: #353535;
+    margin-top: 26px;
+
+}
+#brand .brand_info a{
+ 
+     font-family: var(--primary-font);
+     font-weight: 500;
+     font-size: 18px;
+     line-height: 180%;
+     color: #353535;
+     border: 1px solid #000;
+     border-radius: 20px;
+     width: 171px;
+     height: 66px;
+     padding: 17px ;
+     display: inline-block;
+     text-align: center;
+     margin-top: 45px;
+     transition: .4s;
+ 
+ 
+}
+#brand .brand_info a:hover{
+ 
+     background: #fff;
+ 
+ 
+}
+#brand .brand_info img{
+ 
+     position: absolute;
+     right: 65px ;
+     top: -33px;
+ 
+}
+/* =============== Brand Section Css End =============== */
+
+/* =============== Help Section Css Start =============== */
+#help{
+
+    padding-top: 141px ;
+}
+
+#help .help_card,
+#help .help_info{
+ 
+     width: 50%;
+    
+}
+
+#help .help_card .help_title_design{
+
+    
+    border-radius: 20px;
+    width: 380px;
+    height: 93px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.08);  
+    background: #fff;
+    align-items: center;
+    padding: 18px 29px;
+    margin-bottom: 24px;
+
+}
+#help .help_card .help_title_design img{
+ 
+    padding: 13px;    
+    border-radius: 100%;
+}
+#help .help_card .help_title_design .help_title{
+
+    padding-left: 18px;
+}
+#help .help_card .help_title_design .help_title h3{
+
+    font-family: var(--primary-font);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 180%;
+    color: #353535;
+}
+#help .help_card .help_title_design .help_title p{
+
+    font-family: var(--primary-font);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 180%;
+    color: #353535;
+}
+
+#help .help_info h2{
+
+    font-family: var(--heading-font); 
+    font-size: 50px;
+    text-align: right;
+    color: #353535;
+
+}
+#help .help_info > p{
+
+    font-family: var(--primary-font);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 190%;
+    text-align: right;
+    color: #353535;
+    padding-top: 26px;
+    
+
+}
+
+#help .help_info .progect_info .project,
+#help .help_info .progect_info .client{
+
+   margin-left: auto;
+}
+#help .help_info .progect_info .project h3,
+#help .help_info .progect_info .client h3{
+
+    font-family: var(--primary-font);
+    font-weight: 700;
+    font-size: 40px;
+    text-align: right;
+    color: #353535;
+    padding-top: 32px;
+   
+}
+
+#help .help_info .progect_info .project p,
+#help .help_info .progect_info .client p{
+
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 14px;
+    color: #353535;
+    line-height: 180%;
+   
+
+}
+
+/* =============== Help Section Css End =============== */
+
+
+/* =========== Experience Section Css Start =========== */
+#experience{
+
+    padding-top: 225px;
+}
+#experience h2{
+
+    font-weight: 700;
+    font-size: 50px;
+    text-align: center;
+    color: #353535;
+
+}
+#experience .experience_wrapper {
+    position: relative;
+    margin-top: 79px;
+}
+#experience .experience_wrapper img{
+    position: absolute;
+    height: 100%;
+    left: calc(40% - 21px);
+    top: 0;
+}
+
+#experience .experience_card {
+    justify-content: space-between;
+    margin-bottom: 44px;
+    padding-top: 25px;
+    
+}
+#experience .experience_card_title {
+    width: calc(40% - 42px);
+    
+}
+#experience .experience_card_title h3 {
+    
+    font-family: var(--primary-font);
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 180%;
+    color: #353535;
+    
+
+}
+#experience .experience_card_title p {
+    
+    font-family: var(--primary-font);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 180%;
+    color: #7a7a7a;
+
+
+}
+
+#experience .experience_card_info {
+    width: 60%;
+    padding-left: 54px;
+    position: relative;
+}
+#experience .experience_card_info h3{
+
+    font-family: var(--primary-font);
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 180%;
+    color: #353535;
+    margin-bottom: 16px;
+}
+#experience .experience_card_info p{
+
+    font-family: var(--primary-font);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 200%;
+    color: #7a7a7a;
+}
+
+/* =========== Experience Section Css End =========== */
+
+/* =============== Expert Section Css Start =============== */
+#expert{
+
+    padding-top: 297px;
+    padding-bottom: 149px;
+}
+#expert .expert_info{
+
+    width: 60%;
+}
+#expert .expert_skill{
+
+    width: 40%;
+}
+#expert .expert_info h2{
+
+    
+    font-weight: 700;
+    font-size: 50px;
+    color: #353535;
+    margin-bottom: 49px;
+
+}
+#expert .expert_info p{
+
+    
+    font-family: var(--primary-font);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 200%;
+    color: #7a7a7a;
+    margin-bottom: 14px;
+    width: 90%;
+
+
+}
+#expert .expert_info a{
+
+    font-family: var(--primary-font);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 180%;
+    color: #353535;
+    background: #fff;
+    border-radius: 20px;
+    width: 209px;
+    height: 69px;
+    padding: 16px;
+    margin-top: 39px;
+    text-align: center;
+    display: inline-block;
+    border: 1px solid #000;
+    transition: .4s;
+
+   
+}
+#expert .expert_info a:hover{
+
+    background: #fc0;
+    color: #fff;
+    border: 1px solid #fc0;
+
+    
+}
+#expert .expert_skill .link a{
+
+    font-family: var(--primary-font);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 180%;
+    text-align: center;
+    color: #353535;
+    width: 174px;
+    height: 63px;
+    border-radius: 20px;
+    padding: 15px;
+    display: inline-block;
+    transition: .4s;
+
+}
+#expert .expert_skill .link a:nth-child(2){
+
+
+    margin-left: 40px;
+}
+#expert .expert_skill .link a:hover,
+#expert .expert_skill .link a.active {
+
+    border: 1px solid #000;
+    
+}
+#expert .expert_skill .expert_skill_card_container{
+
+    padding-top: 51px;
+}
+#expert .expert_skill .expert_skill_Card_info{
+
+    padding-bottom: 41px;
+}
+#expert .expert_skill .expert_skill_Card_info h3{
+
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 180%;
+    color: #353535;
+    padding-bottom: 11px;
+
+}
+
+#expert .expert_skill .expert_skill_tarck{
+
+    background: #d9d9d9;
+    border-radius: 50px;
+    width: 380px;
+    height: 6px;
+
+}
+#expert .expert_skill .expert_skill_tarck .expert_skill_bar{
+  
+    height: 100%;
+    margin-right: auto;
+    text-align: right;
+    border-radius: 50px;
+   
+}
+#expert .expert_skill .expert_skill_tarck .expert_skill_bar span{
+
+
+    font-family: var(--primary-font);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 180%;
+    text-align: right;
+    transform: translateY(-43px);
+    display: inline-block;
+
+}
+
+
+
+/* =============== Expert Section Css End =============== */
+
+/* =============== My Service Section Css Start =============== */
+#myservice{
+
+    background: #FFF7D5;
+}
+#myservice .container{
+
+    padding-top: 71px;
+    padding-bottom: 103px;
+}
+#myservice .myservive_info{
+
+    text-align: center;
+}
+
+#myservice .myservive_info h2{
+
+    
+    font-weight: 700;
+    font-size: 50px;
+    text-align: center;
+    color: #353535;
+
+
+}
+#myservice .myservive_info p{
+
+    
+    font-family: var(--primary-font);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 180%;
+    text-align: center;
+    color: #7a7a7a;
+    padding-top: 13px;
+    width: 51%;
+    margin: auto;
+
+
+}
+
+#myservice .myservice_card_container{
+
+    padding-top: 73px;
+    gap: 19px;
+    margin: auto;
+}
+#myservice .myservice_card_container .myservice_card{
+
+    width: calc((100% / 3) - 48px) ;
+    margin: auto;
+    border-radius: 12px;
+    height: 422px;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.06);
+    background: #fff;
+    text-align: center;
+    transition: .5s;
+    
+}
+#myservice .myservice_card_container .myservice_card:hover{
+
+    background: linear-gradient(151deg, #FFCC00 100%, #FFE476 100% );
+    margin-bottom: 20px;
+    
+}
+#myservice .myservice_card_container .myservice_card img{
+
+    margin: auto;
+    padding: 32px;
+}
+#myservice .myservice_card_container .myservice_card h3{
+
+    font-family: var(--primary-font);
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 180%;
+    text-align: center;
+    color: #353535;
+
+}
+#myservice .myservice_card_container .myservice_card p{
+
+    font-family: var(--primary-font);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 180%;
+    text-align: center;
+    color: #7a7a7a;
+    padding: 25px 0;
+    width: 72%;
+    margin: auto;
+
+}
+
+/* =============== My Service Section Css End =============== */
